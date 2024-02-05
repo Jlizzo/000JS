@@ -1,0 +1,50 @@
+/*
+*/
+
+
+
+//This variable is supposed to retrieve the animation from the CSS page
+const img = document.querySelector("#memeimage");
+//this variable is supposed to connect the CSS animation to 'btn1'
+const start = document.getElementById("btn1").onclick = "#memeimage:active";
+//This variable is supposed to connect the CSS stopAnimation to 'btn2'
+const stop = document.getElementById("btn2").onclick = "#memeimage:not(:active)";
+
+//This function is supposed to initiate the CSS animation
+function start() {
+    //this is supposed to activate the animation onclick of btn1
+    btn1.addEventListener("click", (start) => {
+    //This is supposed to toggle the button to activate the stop function of btn2
+    img.toggle("stop");
+});
+}
+
+//This function is supposed to initiate the CSS stop animation
+function stop() {
+    //this is supposed to stop the animation onclick of btn2
+    btn2.addEventListener("click", (stop) => {
+    //This is supposed to toggle the button to activate the start function of btn1
+    img.toggle("start");
+});
+}
+
+
+
+
+
+
+/*function startAnimation() {
+    element.addEventListener('click', stopAnimation());
+    images.src="learntocodenerd.jpg";
+    element.removeEventListener('click', startAnimation());
+
+}
+
+function stopAnimation() {
+    element.addEventListener('click', startAnimation());
+    images.src="learntocodenerd.jpg";
+    element.removeEventListener('click', stopAnimation());
+}
+
+
+
